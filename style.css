@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body{
+  background-image: linear-gradient(#00C9FF,#92FE9D);
+  margin: 0;
+  padding: 0;
+}
+
+
+#navigation{
+  
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#carouselExampleCaptions{
+padding-top: 56px;
+}
+
+.btn{
+  background-image: yellow;
+}
+
+.display{
+  display: flex;
+  flex-wrap: wrap;
+  
+  background-color: #f5fbf8;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+
+
+#csir_image{
+  color: white;
+ list-style: none;
+}
+#csir_image img{
+  width: 10vw;
+}
+
+
+.break{
+
+  border: 2px solid rgb(12, 12, 5);
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  font-family: 'Titan One', cursive;
+  background: repeating-linear-gradient(90deg,#00C9FF,30%,#92FE9D);
+
+}
+
+
+
+
+
+
+
+.totalheroes{
+
+
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+
+.heroes{
+ 
+  display: flex;
+  height: 85vh;
+ justify-content:space-evenly;
+ align-items: center;
+
+
+}
+
+
+
+/* BEGIN CARD DESIGN */
+.hero {
+  margin-top: 10vh;
+  position: relative;
+  width: 350px;
+  min-width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.hero-profile-img {
+  height: 70%;
+}
+
+.hero-description-bk {
+  
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+ .hero-description-bk {
+  background-image: linear-gradient(-20deg , #20e3b2, #0CEBEB)
+}
+
+.hero-description {
+  position: absolute;
+  color: #fff;
+  font-weight: 900;
+  left: 150px;
+  bottom: 26%;
+}
+
+.hero-btn {
+  background-color: #72AAFF;
+  position: absolute;
+  color: rgb(13, 11, 11);
+  right: 30px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid rgb(20, 14, 14);
+  border-radius: 10px;
+}
+
+.hero-btn a {
+  color: #fff;
+}
+
+/* END CARD DESIGN */
+
+.btn i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top:5px;
+  right:5px;
+}
+#news-section{
+  margin: 70px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+/* //dekhte hain kya hota hai  */
+body{
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+.contact-form{
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+  border: 2px solid black;
+}
+.contact-form .form-control{
+  border-radius:1rem;
+}
+.contact-image{
+  text-align: center;
+}
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form{
+  padding: 14%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #338353;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #00cc7e;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 480px){
+  .display{
+    display: block;
+  } 
+    .cards{
+      height: auto;
+    }
+  
+   
+  
+    .container .card:hover {
+      height :200px;    
+    }
+  
+    .container {
+      position : relative;
+      width : 47vw;
+      display : flex;
+      
+      
+     
+      padding : 10px;  
+    }
+    #csir_image img{
+      width: 10vw;
+    }
+
+    .container .card {
+      position: relative;
+ 
+      height : 138px;  
+      background-color : #fff;
+      margin : 30px 10px;
+      padding : 20px 15px;
+      
+      display : flex;
+      flex-direction : column;
+      box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+      transition : 0.3s ease-in-out;
+      border-radius : 15px;
+    }
+
+    .doctor{
+      visibility: 0;
+      
+    }
+    
+.board{
+  width: 1vw;
+}
+
+  }
+  @media (max-width: 820px)
+{
+    .heroes{
+      display: flex;
+      flex-direction: column;
+      height: 85vh;
+     justify-content:center;
+     align-items: center;
+    
+    
+        }
+}

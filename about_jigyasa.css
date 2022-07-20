@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(#FFEFBA,#FFFFFF);
+    margin: 0;
+    padding: 0;
+}
+
+
+.img{
+    margin: 20px;
+    
+   
+    width: 500px;
+}
+.about{
+    display: flex;
+}
+
+img{
+    width: inherit;
+}
+
+.text{
+    margin: 20px;
+    padding: 30px;
+   
+height: auto;
+width: auto;
+
+}
+
+@media (max-width: 820px)
+{
+    .img{
+        width: 0;
+    }
+}

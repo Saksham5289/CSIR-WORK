@@ -1,0 +1,130 @@
+body{
+    background: repeating-linear-gradient(90deg,#00C9FF,30%,#92FE9D);
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
+.youtubecards{
+    display: grid;
+   
+ margin: 30PX;
+
+}
+
+.youtubecard{
+    
+    color: white;
+    padding: 1rem;
+    
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    background-image: -moz-repeating-linear-gradient(green
+    blue
+    );
+}
+
+.about1{
+    padding: 20px;
+    margin: 20px;
+}
+
+.about2 img{
+    width: 27vw;
+}
+
+iframe{
+    border: 5 px solid black;
+}
+
+
+.heading{
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Titan One', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 600px)
+{
+    .youtubecards{grid-template-columns: repeat(2,1fr);}
+}
+
+@media (min-width: 900px)
+{
+    .youtubecards{grid-template-columns: repeat(3,1fr);}
+}
+
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1 .card1
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 70px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container1 .card1:hover
+{
+    height: 250px;
+}
+.container1 .card1 .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container1 .card1 .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container1 .card1 .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container1 .card1:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+a:hover{
+    cursor: pointer;
+    color: #92FE9D;
+}
+h2:hover{
+    color: greenyellow;
+}
+
+.imgContainer{
+    cursor: pointer;
+}
+@media (max-width: 330px){
+    .container1 .card1 .imgContainer{
+        left: -2px;
+    }
+}
